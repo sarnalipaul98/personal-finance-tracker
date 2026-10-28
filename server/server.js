@@ -9,11 +9,19 @@ const authenticateToken = require("./middleware/auth");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:4173"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:4173",
+      "https://personal-finance-tracker-xi-tawny.vercel.app"
+    ],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
   })
 );
+
 app.use(express.json());
 
 // Authentication routes
