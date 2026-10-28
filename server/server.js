@@ -40,6 +40,19 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+app.get("/api/db-check", async (req, res) => {
+  try {
+    await pool.query("SELECT 1");
+    res.json({ success: true, message: "Database connected" });
+  } catch (error) {
+    console.error("Database check failed:", error.message);
+    res.status(500).json({
+      success: false,
+      message: "Database connection failed",
+    });
+  }
+});
+
 // Get logged-in user's transactions
 app.get("/api/transactions", authenticateToken, async (req, res) => {
   try {
