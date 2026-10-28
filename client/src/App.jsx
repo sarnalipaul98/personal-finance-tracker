@@ -15,8 +15,8 @@ import {
   CartesianGrid,
 } from "recharts";
 
-const API_URL = "http://localhost:5000/api/transactions";
-const AUTH_URL = "http://localhost:5000/api/auth";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/transactions`;
+const AUTH_URL = `${import.meta.env.VITE_API_URL}/api/auth`;
 
 const inputClass =
   "mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-violet-500 focus:ring-4 focus:ring-violet-100";
@@ -1434,7 +1434,7 @@ function SummaryCard({ title, amount, icon, theme }) {
       icon: "bg-white/20 text-white",
       label: "Income minus expenses",
       badge: "BALANCE",
-      progress: "w-5/6",
+      progress: "w-5/6",F
     },
     negative: {
       card: "from-orange-500 via-rose-500 to-red-600",
