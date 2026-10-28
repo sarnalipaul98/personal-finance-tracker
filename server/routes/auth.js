@@ -247,7 +247,7 @@ router.put("/profile/password", authenticateToken, async (req, res) => {
 
 
 } catch (error) {
-  console.error("Login error:", error);
+  console.error("Login error details:", error.stack || error);
   res.status(500).json({ message: "Login failed." });
 }
 });
