@@ -242,12 +242,14 @@ router.put("/profile/password", authenticateToken, async (req, res) => {
     res.json({
       message: "Password changed successfully.",
     });
-  } catch (error) {
-    console.error("Change password error:", error.message);
-    res.status(500).json({
-      message: "Failed to change password.",
-    });
-  }
+  
+
+
+
+} catch (error) {
+  console.error("Login error:", error);
+  res.status(500).json({ message: "Login failed." });
+}
 });
 
 module.exports = router;
