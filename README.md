@@ -1,82 +1,55 @@
 # Personal Finance Tracker
-A web application that helps users manage their personal finances by tracking income, expenses, transactions, and financial summaries.
 
-## Live Demo
+## 1. Introduction of the Project
 
-https://personal-finance-tracker-xi-tawny.vercel.app/
+The Personal Finance Tracker is a web-based application designed to help users manage their personal finances efficiently. It allows users to track income and expenses, manage transactions, and view their financial summaries through a dashboard. The application provides charts and notifications to make financial information easier to understand and manage.
 
-## Features
-- User registration and login
-- Dashboard with income, expense, and balance summaries
-- Add and manage financial transactions
-- Charts for visualizing financial data
-- PostgreSQL database for storing information
-- Toast notifications for success and error messages
-- Responsive design for desktop and mobile devices
+## 2. Tech Stack and Reasons for Using It
 
-## Tech Stack
+| Technology | Purpose and Reason |
+|---|---|
+| React.js | Builds reusable and interactive user interface components. |
+| Vite | Provides fast development and build tools for the frontend. |
+| Tailwind CSS | Helps create a responsive and attractive interface with utility classes. |
+| React Hot Toast | Displays instant success and error notifications. |
+| Node.js | Runs the backend JavaScript application. |
+| Express.js | Creates backend API routes and handles client requests. |
+| PostgreSQL | Stores user and financial transaction data in a structured database. |
+| Vercel | Hosts and deploys the frontend application. |
+| Render | Hosts the backend API. |
+| Git and GitHub | Track code changes and maintain the project repository. |
 
-**Frontend**
-- React.js
-- Vite
-- Tailwind CSS
-- React Hot Toast
-- Charting library
+## 3. Use Cases
 
-**Backend**
-- Node.js
-- Express.js
-- REST API
+The application can be used in the following situations:
 
-**Database**
-- PostgreSQL
+- **Income Tracking:** Record income received from different sources.
+- **Expense Management:** Record and monitor daily expenses.
+- **Financial Overview:** View income, expenses, and balance on the dashboard.
+- **Transaction Management:** Add and manage financial transactions.
+- **Visual Analysis:** Use charts to understand spending patterns.
+- **Account Management:** Register and log in to access the application.
+- **Instant Feedback:** Receive notifications when an action succeeds or fails.
+- **Mobile Access:** Use the application on desktop and mobile devices.
 
-**Deployment**
-- Frontend: Vercel
-- Backend: Render
+## 4. Research and Analysis
 
-## Project Structure
+Personal finance management is important for understanding spending habits and controlling expenses. Manual tracking using notebooks or spreadsheets can become time-consuming as transactions increase.
 
+This project addresses that problem by providing a centralized digital platform for recording transactions and viewing financial summaries. The dashboard and charts help users understand their financial activity, while database storage helps maintain transaction records.
 
-personal-finance-tracker/
-├── client/
-│   └── React frontend
-├── server/
-│   └── Express backend
-└── README.md
+The project focuses on usability, responsive design, structured data storage, and clear financial information.
 
+## 5. Conclusion
 
-## Run Locally
+The Personal Finance Tracker demonstrates how modern web technologies can be used to develop a practical financial management application. It combines an interactive frontend, a backend API, and a PostgreSQL database to manage financial information.
 
-### 1. Clone the repository
+The project provides experience in frontend development, backend API integration, database management, responsive design, notifications, and cloud deployment. It can be extended in the future with features such as budgets, savings goals, monthly reports, and downloadable financial statements.
 
+## 6. Project Links
 
-git clone https://github.com/sarnalipaul98/personal-finance-tracker.git
-cd personal-finance-tracker
-
-
-### 2. Install frontend dependencies
-
-
-cd client
-npm install
-npm run dev
-
-
-### 3. Start the backend
-
-Open another terminal:
-
-cd server
-npm install
-npm start
-
-
-Configure the required environment variables for the frontend and backend before running the application.
-
-## Security
-
-Never commit passwords, API keys, database credentials, or private environment files to GitHub.
-
-## Author
-Developed as a personal finance management project.
+- **Live Frontend:** https://personal-finance-tracker-xi-tawny.vercel.app/
+- **Backend API:** https://personal-finance-tracker-api-4kah.onrender.com
+- **GitHub Repository:** https://github.com/sarnalipaul98/personal-finance-tracker
+- **Frontend Source Code:** https://github.com/sarnalipaul98/personal-finance-tracker/tree/main/client
+- **Backend Source Code:** https://github.com/sarnalipaul98/personal-finance-tracker/tree/main/server
