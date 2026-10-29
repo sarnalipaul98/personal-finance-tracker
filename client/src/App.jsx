@@ -1430,12 +1430,12 @@ function SummaryCard({ title, amount, icon, theme }) {
       progress: "w-3/4",
     },
     balance: {
-      card: "from-violet-600 via-indigo-600 to-blue-700",
-      icon: "bg-white/20 text-white",
-      label: "Income minus expenses",
-      badge: "BALANCE",
-      progress: "w-5/6",F
-    },
+  card: "from-violet-600 via-indigo-600 to-blue-700",
+  icon: "bg-white/20 text-white",
+  label: "Income minus expenses",
+  badge: "BALANCE",
+  progress: "w-5/6",
+},
     negative: {
       card: "from-orange-500 via-rose-500 to-red-600",
       icon: "bg-white/20 text-white",
