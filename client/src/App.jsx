@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { useAuth } from "./AuthContext.jsx";
+import toast, { Toaster } from "react-hot-toast";
 import {
   PieChart,
   Pie,
@@ -60,9 +61,15 @@ const [filterEndDate, setFilterEndDate] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
   function showMessage(text, messageKind = "success") {
-    setMessage(text);
-    setMessageType(messageKind);
+  setMessage(text);
+  setMessageType(messageKind);
+
+  if (messageKind === "error") {
+    toast.error(text);
+  } else {
+    toast.success(text);
   }
+}
 
   function clearMessage() {
     setMessage("");
@@ -540,7 +547,9 @@ const monthlyChartData = Object.values(
   }
 
   return (
+    
     <div className="min-h-screen bg-[#f6f5ff] text-slate-800">
+      <Toaster position="top-right" />
       <header className="relative overflow-hidden bg-gradient-to-r from-violet-800 via-indigo-700 to-blue-700 text-white">
         <div className="pointer-events-none absolute -right-20 -top-32 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 left-1/3 h-64 w-64 rounded-full bg-fuchsia-400/20 blur-3xl" />
